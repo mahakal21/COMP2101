@@ -22,6 +22,6 @@ echo ""
 sleep 5
 
 echo "Task 2 Display 10 Largest file with file name size and owner"
-echo "              "
+echo "============================================================"
 find / 2>/dev/null -type f -exec ls -l --block-size=M {} + | sort -rh --key 5 | head -n 10 | awk '{print $3, $5, $9}'
 echo ""
