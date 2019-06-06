@@ -14,20 +14,16 @@
 
 echo "Rolling six sided two dices
 "
-sleep 2
 echo "Rolling..."
 sleep 4
 echo "$(( RANDOM % 6 + 1)), $(( RANDOM % 6 + 1 )) rolled
 "
-sleep 2
 echo "Rolling six sided five dices "
-sleep 2
 echo "
 Rolling..."
 sleep 4
 echo "$((RANDOM % 6 + 1 )), $(( RANDOM % 6 + 1 )), $((RANDOM % 6 + 1 )), $(( RANDOM % 6 + 1 )), $((RANDOM % 6 + 1 )), rolled
 "
-sleep 2
 echo "Rolling 20 sided one dice"
 
 echo "
