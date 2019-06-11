@@ -26,7 +26,7 @@ EOF
 echo""
 
 echo "Now getting and unzip tgz files."
-echo "==============================="
+echo "=============================="
 echo""
 test -d ~/Pictures || mkdir ~/Pictures
 
