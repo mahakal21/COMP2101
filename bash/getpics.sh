@@ -23,6 +23,11 @@ Found $(find ~/Pictures -type f|wc -l) files in the Pictures directory.
 The Pictures directory uses $(du -sh ~/Pictures|awk '{print $1}') space on the disk.
 EOF
 
+echo""
+
+echo "Now getting and unzip tgz files."
+echo "==============================="
+echo""
 test -d ~/Pictures || mkdir ~/Pictures
 
 # download a zipfile of pictures to our Pictures directory if it isn't already there - assumes you are online
