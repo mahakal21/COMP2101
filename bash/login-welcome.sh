@@ -17,12 +17,19 @@ time=$(date +'%A, %I:%M, %p')
 
 hostname=$(hostname)
 weekday=$(date +%u)
+variable=$(cat <<EOF
 
-cowsay Welcome to planet $hostname, $title !
+Welcome to planet $hostname, $title !
 
-if [ "$weekday" = "6" ] || [ "$weekday" = "7" ]
+$(if [ "$weekday" = "6" ] || [ "$weekday" = "7" ]
 then
   echo "It is $time on weekend."
 else
   echo "It is $time on Weekday."
 fi
+)
+EOF
+)
+cat <<EOF
+$(cowsay$variable)
+EOF
